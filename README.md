@@ -42,3 +42,10 @@ vs
 ```
 
 The set command will also handle some error handling to only allow configured sub-commands.
+
+Example Video
+=============
+
+You can view a demo of the console here:
+
+https://youtu.be/HkeQNsK9FRs
