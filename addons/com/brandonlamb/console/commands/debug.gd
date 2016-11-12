@@ -1,5 +1,3 @@
-extends Node
-
 func _init(console_): pass
 
 func run(args):

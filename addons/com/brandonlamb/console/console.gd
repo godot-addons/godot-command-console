@@ -6,6 +6,7 @@ const CommandFactory = preload("res://addons/com/brandonlamb/console/commands/co
 onready var history = get_node("panel/history") setget n, get_history
 onready var input = get_node("panel/input") setget n, get_input
 onready var command_factory = CommandFactory.new(self) setget n, n
+onready var command_parser = CommandParser.new()
 
 func _ready():
 	add_message("Console initialized")
@@ -37,7 +38,7 @@ func send_message(text):
 	run(text)
 
 func run(text):
-	var parsed_command = CommandParser.new(text)
+	var parsed_command = command_parser.parse(text)
 	var command = command_factory.create(parsed_command.get_command())
 
 	if command != null:

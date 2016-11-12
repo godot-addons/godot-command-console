@@ -1,5 +1,3 @@
-extends Node
-
 var console setget n, n
 
 func _init(console_): console = console_

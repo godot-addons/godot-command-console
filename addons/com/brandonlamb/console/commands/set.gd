@@ -1,5 +1,3 @@
-extends Node
-
 const SetCommandFactory = preload("res://addons/com/brandonlamb/console/commands/set/set_command_factory.gd")
 
 var command_factory setget n, n
